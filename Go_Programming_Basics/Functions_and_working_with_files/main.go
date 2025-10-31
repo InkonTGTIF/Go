@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-// Читает данные из файла "input.txt", обрабатывает их и записывает в "output.txt" файл.
+// Читает данные из файла "input.txt", обрабатывает их
 func ReadProcessWrite(inputPath, outputPath string, processFunc func(string) (string, error)) error {
 	// Чтение файла
 	inputData, err := os.ReadFile(inputPath)
